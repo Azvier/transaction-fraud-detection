@@ -1,5 +1,5 @@
 # Dataset
-datasets/
+datasets/financial_fraud_detection_dataset.csv
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
