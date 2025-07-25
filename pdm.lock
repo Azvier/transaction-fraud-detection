@@ -5,7 +5,7 @@
 groups = ["default"]
 strategy = ["inherit_metadata"]
 lock_version = "4.5.0"
-content_hash = "sha256:1a653ff11c35e017b5269e65bb7ab7ced983be0f503c40bde9579a5d4b3e7187"
+content_hash = "sha256:021eb558f31249d29438431ac504eaabe589e0e2ca85eb955b7a12126fcf8b59"
 
 [[metadata.targets]]
 requires_python = "==3.12.*"
@@ -120,19 +120,21 @@ files = [
 
 [[package]]
 name = "imbalanced-learn"
-version = "0.12.4"
-summary = "Toolbox for imbalanced dataset in machine learning."
+version = "0.13.0"
+requires_python = ">=3.10"
+summary = "Toolbox for imbalanced dataset in machine learning"
 groups = ["default"]
 dependencies = [
-    "joblib>=1.1.1",
-    "numpy>=1.17.3",
-    "scikit-learn>=1.0.2",
-    "scipy>=1.5.0",
-    "threadpoolctl>=2.0.0",
+    "joblib<2,>=1.1.1",
+    "numpy<3,>=1.24.3",
+    "scikit-learn<2,>=1.3.2",
+    "scipy<2,>=1.10.1",
+    "sklearn-compat<1,>=0.1",
+    "threadpoolctl<4,>=2.0.0",
 ]
 files = [
-    {file = "imbalanced-learn-0.12.4.tar.gz", hash = "sha256:8153ba385d296b07d97e0901a2624a86c06b48c94c2f92da3a5354827697b7a3"},
-    {file = "imbalanced_learn-0.12.4-py3-none-any.whl", hash = "sha256:d47fc599160d3ea882e712a3a6b02bdd353c1a6436d8d68d41b1922e6ee4a703"},
+    {file = "imbalanced_learn-0.13.0-py3-none-any.whl", hash = "sha256:7eb5859f7827cb3babfa5789978c22fe36e56527d9c9768df2d864d98d9b40fe"},
+    {file = "imbalanced_learn-0.13.0.tar.gz", hash = "sha256:d4a8d6372086982350d6de1c7e5b1ed5ece9e41bf93043b4d0e9ea1c422a6606"},
 ]
 
 [[package]]
@@ -538,23 +540,23 @@ files = [
 
 [[package]]
 name = "scikit-learn"
-version = "1.7.1"
-requires_python = ">=3.10"
+version = "1.6.1"
+requires_python = ">=3.9"
 summary = "A set of python modules for machine learning and data mining"
 groups = ["default"]
 dependencies = [
     "joblib>=1.2.0",
-    "numpy>=1.22.0",
-    "scipy>=1.8.0",
+    "numpy>=1.19.5",
+    "scipy>=1.6.0",
     "threadpoolctl>=3.1.0",
 ]
 files = [
-    {file = "scikit_learn-1.7.1-cp312-cp312-macosx_10_13_x86_64.whl", hash = "sha256:3cee419b49b5bbae8796ecd690f97aa412ef1674410c23fc3257c6b8b85b8087"},
-    {file = "scikit_learn-1.7.1-cp312-cp312-macosx_12_0_arm64.whl", hash = "sha256:2fd8b8d35817b0d9ebf0b576f7d5ffbbabdb55536b0655a8aaae629d7ffd2e1f"},
-    {file = "scikit_learn-1.7.1-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.whl", hash = "sha256:588410fa19a96a69763202f1d6b7b91d5d7a5d73be36e189bc6396bfb355bd87"},
-    {file = "scikit_learn-1.7.1-cp312-cp312-manylinux_2_27_aarch64.manylinux_2_28_aarch64.whl", hash = "sha256:e3142f0abe1ad1d1c31a2ae987621e41f6b578144a911ff4ac94781a583adad7"},
-    {file = "scikit_learn-1.7.1-cp312-cp312-win_amd64.whl", hash = "sha256:3ddd9092c1bd469acab337d87930067c87eac6bd544f8d5027430983f1e1ae88"},
-    {file = "scikit_learn-1.7.1.tar.gz", hash = "sha256:24b3f1e976a4665aa74ee0fcaac2b8fccc6ae77c8e07ab25da3ba6d3292b9802"},
+    {file = "scikit_learn-1.6.1-cp312-cp312-macosx_10_13_x86_64.whl", hash = "sha256:926f207c804104677af4857b2c609940b743d04c4c35ce0ddc8ff4f053cddc1b"},
+    {file = "scikit_learn-1.6.1-cp312-cp312-macosx_12_0_arm64.whl", hash = "sha256:2c2cae262064e6a9b77eee1c8e768fc46aa0b8338c6a8297b9b6759720ec0ff2"},
+    {file = "scikit_learn-1.6.1-cp312-cp312-manylinux_2_17_aarch64.manylinux2014_aarch64.whl", hash = "sha256:1061b7c028a8663fb9a1a1baf9317b64a257fcb036dae5c8752b2abef31d136f"},
+    {file = "scikit_learn-1.6.1-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:2e69fab4ebfc9c9b580a7a80111b43d214ab06250f8a7ef590a4edf72464dd86"},
+    {file = "scikit_learn-1.6.1-cp312-cp312-win_amd64.whl", hash = "sha256:70b1d7e85b1c96383f872a519b3375f92f14731e279a7b4c6cfd650cf5dffc52"},
+    {file = "scikit_learn-1.6.1.tar.gz", hash = "sha256:b4fc2525eca2c69a59260f583c56a7557c6ccdf8deafdba6e060f94c1c59738e"},
 ]
 
 [[package]]
@@ -588,6 +590,20 @@ groups = ["default"]
 files = [
     {file = "six-1.17.0-py2.py3-none-any.whl", hash = "sha256:4721f391ed90541fddacab5acf947aa0d3dc7d27b2e1e8eda2be8970586c3274"},
     {file = "six-1.17.0.tar.gz", hash = "sha256:ff70335d468e7eb6ec65b95b99d3a2836546063f63acc5171de367e834932a81"},
+]
+
+[[package]]
+name = "sklearn-compat"
+version = "0.1.3"
+requires_python = ">=3.8"
+summary = "Ease support for compatible scikit-learn estimators across versions"
+groups = ["default"]
+dependencies = [
+    "scikit-learn<1.7,>=1.2",
+]
+files = [
+    {file = "sklearn_compat-0.1.3-py3-none-any.whl", hash = "sha256:a8aaf8ef711988cbd63f187c5560b5f16b25df663aaa1d2d0e1291341d339f80"},
+    {file = "sklearn_compat-0.1.3.tar.gz", hash = "sha256:74f8267613249d599aa3a2f2503af32fa51bce0800b1b0b0a57b52354402454e"},
 ]
 
 [[package]]

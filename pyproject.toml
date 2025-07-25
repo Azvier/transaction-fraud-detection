@@ -5,7 +5,7 @@ description = "Default template for PDM package"
 authors = [
     {name = "Abdul Fathin Fawwaz", email = "abdulfathinfawwaz@gmail.com"},
 ]
-dependencies = ["pandas>=2.3.1", "ipykernel>=6.30.0", "scikit-learn>=1.7.1", "imblearn>=0.0", "xgboost>=3.0.2", "imbalanced-learn>=0.12.4"]
+dependencies = ["pandas>=2.3.1", "ipykernel>=6.30.0", "scikit-learn>=1.6.1", "imblearn>=0.0", "xgboost>=3.0.2", "imbalanced-learn>=0.13.0"]
 requires-python = "==3.12.*"
 readme = "README.md"
 license = {text = "MIT"}
