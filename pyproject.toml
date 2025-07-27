@@ -15,7 +15,8 @@ dependencies = [
     "pyarrow>=21.0.0",
     "numpy>=2.3.2",
     "seaborn>=0.13.2",
-    "matplotlib>=3.10.3"
+    "matplotlib>=3.10.3",
+    "lightgbm>=4.6.0"
 ]
 requires-python = "==3.12.*"
 readme = "README.md"
