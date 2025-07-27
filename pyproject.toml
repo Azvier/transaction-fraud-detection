@@ -20,6 +20,7 @@ dependencies = [
     "ipywidgets>=8.1.7",
     "tensorflow>=2.19.0",
     "torch>=2.7.1",
+    "torch-geometric>=2.6.1",
 ]
 requires-python = "==3.12.*"
 readme = "README.md"
