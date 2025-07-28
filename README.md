@@ -1,4 +1,4 @@
-# Anomaly Fraud Detection
+# Transaction Fraud Detection
 
 This project implements a machine learning pipeline to detect fraudulent financial transactions. It uses a combination of feature engineering, exploratory data analysis, and model training to build a robust fraud detection system.
 
@@ -55,7 +55,7 @@ This project implements a machine learning pipeline to detect fraudulent financi
 
 1.  Clone the repository:
     ```bash
-    git clone https://github.com/your-username/anomaly-fraud-detection.git
+    git clone https://github.com/your-username/transaction-fraud-detection.git
     ```
 2.  Install the dependencies using PDM:
     ```bash
